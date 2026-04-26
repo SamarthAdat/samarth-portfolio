@@ -3,8 +3,8 @@ class AppLinks {
   static const String phone = 'tel:+919172935930';
 
   // Replace with your actual URLs.
-  static const String github = 'https://github.com/';
-  static const String linkedIn = 'https://www.linkedin.com/';
+  static const String github = 'https://github.com/samarthadat';
+  static const String linkedIn = 'https://www.linkedin.com/in/samarthadat';
 
   // Later, after adding resume asset, you can handle this properly.
   static const String resume = '#';
