@@ -8,10 +8,9 @@ class PortfolioData {
   static const String phone = '+91 9172935930';
 
   static const String about =
-      'Results-driven developer with hands-on experience in cloud-native mobile applications, '
-      'microservices architecture, Firebase systems, CI/CD automation, and real-world product development. '
-      'I specialize in Flutter applications, Firebase-backed real-time systems, RESTful APIs, geolocation features, '
-      'monitoring dashboards, and scalable backend infrastructure.';
+      'Software engineer focused on building cloud-native mobile products from concept to scale. '
+      'I work across Flutter apps, Firebase and Node.js microservices, Kubernetes-based infrastructure, '
+      'and CI/CD pipelines that keep releases fast, stable, and production-ready.';
 
   static const List<InfoItem> contacts = [
     InfoItem(label: 'Email', value: 'samarthadat2002@gmail.com'),
@@ -21,10 +20,10 @@ class PortfolioData {
   ];
 
   static const List<String> whatIDo = [
-    'Build production-grade Flutter applications with clean UI, real-time data, and Firebase integrations.',
-    'Design REST APIs and Firebase Cloud Functions for chats, offers, geolocation, community, and app workflows.',
-    'Work with AWS EC2, Kubernetes, ALB Ingress, Prometheus, Grafana, Jenkins, and CI/CD automation.',
-    'Create scalable app features including pagination, geospatial filters, analytics, Crashlytics, and cloud messaging.',
+    'Design and ship production Flutter apps with polished UX, real-time features, and measurable product impact.',
+    'Build modular backend services with Node.js and Firebase Cloud Functions for chat, offers, geolocation, and community flows.',
+    'Deploy and monitor cloud infrastructure using AWS EC2, Kubernetes, ALB Ingress, Prometheus, and Grafana.',
+    'Improve reliability through search optimization, pagination, analytics, Crashlytics, and CI/CD release pipelines.',
   ];
 
   static const List<Experience> experience = [
@@ -134,8 +133,8 @@ class PortfolioData {
   ];
 
   static const List<String> achievements = [
-    '2nd Prize – Founders’ Battleground, Bangalore; awarded ₹50,000 for presenting Krishi Sanskriti as an agri-tech solution.',
-    'Runner-up in a Project-Based Learning competition for data analytics.',
+    '2nd Prize, Founders’ Battleground (Bangalore); awarded ₹50,000 for presenting Krishi Sanskriti.',
+    'Runner-up in a project-based learning competition for data analytics.',
   ];
 
   static const List<String> coursework = [

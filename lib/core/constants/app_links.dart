@@ -6,6 +6,8 @@ class AppLinks {
   static const String github = 'https://github.com/samarthadat';
   static const String linkedIn = 'https://www.linkedin.com/in/samarthadat';
 
-  // Later, after adding resume asset, you can handle this properly.
-  static const String resume = '#';
+  static const String resume = 'assets/resume/Samarth_Adat_Resume.pdf';
+
+  // Free form backend endpoint for contact form submissions.
+  static const String contactFormSubmit = 'https://flowform.to/submit';
 }
