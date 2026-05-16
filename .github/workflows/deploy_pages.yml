@@ -46,6 +46,17 @@ jobs:
           echo "Using base href: ${BASE_HREF}"
           flutter build web --release --base-href "${BASE_HREF}"
 
+      - name: Add legacy resume path compatibility
+        shell: bash
+        run: |
+          if [ -d "build/web/assets/assets/resume" ]; then
+            mkdir -p "build/web/assets/resume"
+            cp -f build/web/assets/assets/resume/* build/web/assets/resume/
+            echo "Legacy resume path created: build/web/assets/resume/"
+          else
+            echo "No resume directory found at build/web/assets/assets/resume; skipping compatibility copy."
+          fi
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
         with:
