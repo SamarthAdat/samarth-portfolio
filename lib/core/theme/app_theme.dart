@@ -1,67 +1,64 @@
 import 'package:flutter/material.dart';
 
-class AppTheme {
-  static const Color bg = Color(0xFF121212);
-  static const Color card = Color(0xFF1E1E1F);
-  static const Color cardLight = Color(0xFF2A2A2B);
-  static const Color border = Color(0xFF383838);
-  static const Color text = Color(0xFFF7F7F7);
-  static const Color muted = Color(0xFFB7B7B7);
-  static const Color softMuted = Color(0xFF8D8D8D);
-  static const Color accent = Color(0xFFFFDB70);
-  static const Color accentDark = Color(0xFFB38B20);
+import 'app_colors.dart';
 
-  static ThemeData get theme {
+/// Builds the [ThemeData] applied at the root of the app.
+class AppTheme {
+  const AppTheme._();
+
+  static ThemeData get dark {
     return ThemeData(
       useMaterial3: true,
-      scaffoldBackgroundColor: bg,
+      scaffoldBackgroundColor: AppColors.background,
       fontFamily: 'Arial',
       colorScheme: ColorScheme.fromSeed(
-        seedColor: accent,
+        seedColor: AppColors.accent,
         brightness: Brightness.dark,
-        surface: card,
+        surface: AppColors.card,
       ),
-      textTheme: const TextTheme(
-        displayLarge: TextStyle(
-          color: text,
-          fontSize: 42,
-          fontWeight: FontWeight.w800,
-          height: 1.15,
-          letterSpacing: -0.8,
-        ),
-        headlineLarge: TextStyle(
-          color: text,
-          fontSize: 32,
-          fontWeight: FontWeight.w800,
-          height: 1.2,
-        ),
-        headlineMedium: TextStyle(
-          color: text,
-          fontSize: 24,
-          fontWeight: FontWeight.w700,
-          height: 1.25,
-        ),
-        titleLarge: TextStyle(
-          color: text,
-          fontSize: 20,
-          fontWeight: FontWeight.w700,
-          height: 1.35,
-        ),
-        titleMedium: TextStyle(
-          color: text,
-          fontSize: 16,
-          fontWeight: FontWeight.w700,
-          height: 1.4,
-        ),
-        bodyLarge: TextStyle(color: muted, fontSize: 16, height: 1.75),
-        bodyMedium: TextStyle(color: muted, fontSize: 14, height: 1.65),
-        labelLarge: TextStyle(
-          color: text,
-          fontSize: 13,
-          fontWeight: FontWeight.w700,
-          letterSpacing: 0.2,
-        ),
-      ),
+      textTheme: _textTheme,
     );
   }
+
+  static const TextTheme _textTheme = TextTheme(
+    displayLarge: TextStyle(
+      color: AppColors.text,
+      fontSize: 42,
+      fontWeight: FontWeight.w800,
+      height: 1.15,
+      letterSpacing: -0.8,
+    ),
+    headlineLarge: TextStyle(
+      color: AppColors.text,
+      fontSize: 32,
+      fontWeight: FontWeight.w800,
+      height: 1.2,
+    ),
+    headlineMedium: TextStyle(
+      color: AppColors.text,
+      fontSize: 24,
+      fontWeight: FontWeight.w700,
+      height: 1.25,
+    ),
+    titleLarge: TextStyle(
+      color: AppColors.text,
+      fontSize: 20,
+      fontWeight: FontWeight.w700,
+      height: 1.35,
+    ),
+    titleMedium: TextStyle(
+      color: AppColors.text,
+      fontSize: 16,
+      fontWeight: FontWeight.w700,
+      height: 1.4,
+    ),
+    bodyLarge: TextStyle(color: AppColors.muted, fontSize: 16, height: 1.75),
+    bodyMedium: TextStyle(color: AppColors.muted, fontSize: 14, height: 1.65),
+    labelLarge: TextStyle(
+      color: AppColors.text,
+      fontSize: 13,
+      fontWeight: FontWeight.w700,
+      letterSpacing: 0.2,
+    ),
+  );
 }
